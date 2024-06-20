@@ -1,0 +1,52 @@
+[
+  {
+    "question": "After extracting and mapping the data, the Excel application will remain open?",
+    "options": ["Yes", "No"],
+    "correctAnswer": ["No"],
+    "type": "single",
+    "points": 1
+  },
+  {
+    "question": "What are the two types of rules used to automate decision-making parts of a business process?",
+    "options": ["Decision Table Rule","Text Rule","Both of the above"], 
+    "correctAnswer": ["Both of the above"],
+    "type": "single",
+    "points":1
+  },
+  {
+    "question": "What is the purpose of data types in automation, decision, or processes?",
+    "options": ["to define the execution flow of the logic.","to facilitate the manipulation and validation of data","to automate the mapping of input and output data."],
+    "correctAnswer": ["to facilitate the manipulation and validation of data"],
+    "type":"single",
+    "points":1
+  },
+  {
+    "question":"Which activity is used to loop through data? ",
+    "options": ["For Each activity","Condition activity","End Loop activity"],
+    "correctAnswer": ["For Each activity"],
+    "type":"single",
+    "points":1
+  },
+  {
+    "question":"What are different components of Decisions: ",
+    "options": ["Input data object","Decision table","Form","Decision diagram","Business Logic"],
+    "correctAnswer": ["Input data object","Decision table","Decision diagram"],
+    "type":"multiple",
+    "points":1
+  },
+  {
+    "question":"What are the options available once the process is triggered?",
+    "options": ["Work on the Tasks","Monitor the Process and Automation","Execute the Process","Gain visibility into the Business Process"],
+    "correctAnswer": ["Work on the Tasks","Monitor the Process and Automation","Gain visibility into the Business Process"],
+    "type":"multiple",
+    "points":1
+  },
+  {
+    "question":"Excel Cloud Link activity is used for: ",
+    "options":[ "Looping through data","Excel data mapping","Open an Excel file"],
+    "correctAnswer": "Excel data mapping",
+    "type":"single",
+    "points":1
+  }
+
+]

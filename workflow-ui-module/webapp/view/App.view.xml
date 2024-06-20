@@ -1,0 +1,84 @@
+<mvc:View controllerName="Task.workflowuimodule.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:smartForm="sap.ui.comp.smartform"
+    xmlns:smartField="sap.ui.comp.smartfield"
+    xmlns="sap.m">
+    <App id="app" class="sapUiResponsiveMargin" width="auto">
+        <Page id="scroll" title="SAP Build Process Automation" enableScrolling="true" titleAlignment="Auto" class="customPage">
+            <content>
+                <VBox id="space2">
+                        <HBox id="hb2" height="0.5rem" />
+                    </VBox>
+                <ComboBox id="missionSelector" selectionChange="onMissionChange">
+                <items>
+                    <core:Item id="c1" key="Mission 1" text="Mission 1"/>
+                    <core:Item id="c2" key="Mission 2" text="Mission 2"/>
+                </items>
+                </ComboBox>
+                <VBox id="quiz1" class="sapUiLargeMargin sapUiResponsiveContentPadding">
+                    <VBox id="space0">
+                        <HBox id="hb0" height="0.5rem" />
+                    </VBox>
+                    <Title titleStyle="H1" text="{= ${titleModel>/title} + ' :Self-test'}" id="title" class="customTitle"/>
+                    <VBox id="space1">
+                        <HBox id="hb1" height="2rem" />
+                    </VBox>
+                    <Title class="customQuestionText" text="{= 'Congratulations on completing ' + ${titleModel>/title} + '! This questionnaire consists of a series of questions, and your task is to choose the correct answer from the options provided. Good luck and enjoy the challenge!'}" id="subheading" wrapping="true"/>
+
+                    <!-- <VBox id="space2">
+                        <HBox id="hb2" height="2rem" />
+                    </VBox> -->
+                    <List items="{questionsModel>/questions}" id="it1">
+                        <items>
+                            <CustomListItem id="l2">
+                                <VBox id="vbox" class="customVBox">
+                                    <HBox id="hb" justifyContent="SpaceBetween">
+                                    <Text text="{= 'Question: ' + (${questionsModel>index} + 1)}" id="text1" class="sapUiSmallMarginBottom customText"/>
+                                    <Text text="{= ${questionsModel>points} + ' Pts.'}" id="pointsText" class="sapUiSmallMarginBottom customText"/>
+                                    </HBox>
+                                    <Text text="{= ${questionsModel>question}}" id="text2" class="customQuestionText"/>
+                                    <VBox id="space3">
+                                        <HBox id="hb3" height="1rem" />
+                                    </VBox>
+                                    <VBox id="vbox2" visible="{= ${questionsModel>type} === 'single' }">
+                                        <RadioButtonGroup id="rbg" select="onSelect" selectedIndex="-1">
+                                            <RadioButton id="rb1" text="{questionsModel>options/0}" visible="{= ${questionsModel>options/0} !== undefined }" class="customOptionText"/>
+                                            <RadioButton id="rb2" text="{questionsModel>options/1}" visible="{= ${questionsModel>options/1} !== undefined }" class="customOptionText"/>
+                                            <RadioButton id="rb3" text="{questionsModel>options/2}" visible="{= ${questionsModel>options/2} !== undefined }" class="customOptionText"/>
+                                            <RadioButton id="rb4" text="{questionsModel>options/3}" visible="{= ${questionsModel>options/3} !== undefined }" class="customOptionText"/>
+                                            <RadioButton id="rb5" text="{questionsModel>options/4}" visible="{= ${questionsModel>options/4} !== undefined }" class="customOptionText"/>
+                                        </RadioButtonGroup>
+                                    </VBox>
+                                    <VBox id="vbox3" visible="{= ${questionsModel>type} === 'multiple' }" > 
+                                        <CheckBox id="cb1" text="{questionsModel>options/0}" select="onSelect" class="customOptionText" visible="{= ${questionsModel>options/0} !== undefined }"/>
+                                        <CheckBox id="cb2" text="{questionsModel>options/1}" select="onSelect" class="customOptionText" visible="{= ${questionsModel>options/1} !== undefined }"/>
+                                        <CheckBox id="cb3" text="{questionsModel>options/2}" select="onSelect" class="customOptionText" visible="{= ${questionsModel>options/2} !== undefined }"/>
+                                        <CheckBox id="cb4" text="{questionsModel>options/3}" select="onSelect" class="customOptionText" visible="{= ${questionsModel>options/3} !== undefined }"/>
+                                        <CheckBox id="cb5" text="{questionsModel>options/4}" select="onSelect" class="customOptionText" visible="{= ${questionsModel>options/4} !== undefined }"/>
+                                    </VBox>
+                                </VBox>
+                            </CustomListItem>
+                        </items>
+                    </List>
+                    <VBox id="space4">
+                        <HBox id="hb4" height="1rem" />
+                    </VBox>
+                    <VBox id="4button" class="sapUiSmallMarginBottom">
+                        <Button id="b" text="Calculate score" press="onSubmit" />
+                    </VBox>
+                    <VBox id="space7">
+                        <HBox id="hb5" height="5rem" />
+                    </VBox>
+                    
+                    <!-- <Title id="scoreText" titleStyle="H4" text="Your score is: {context>/score}" textAlign="Center"  /> -->
+                    
+                </VBox>
+            </content>
+        </Page>
+    </App>
+</mvc:View>

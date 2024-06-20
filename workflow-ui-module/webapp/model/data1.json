@@ -1,0 +1,72 @@
+[
+    {
+      "question": "Is SAP Build Process Automation a low-code and no-code application development tool?",
+      "options": ["Yes", "No"],
+      "correctAnswer": ["Yes"],
+      "type": "single",
+      "points": 1
+    },
+    {
+      "question": "What is the Lobby page in SAP Build used for?",
+      "options": ["to create, access and, manage projects", "to book meeting rooms", "to configure database servers"],
+      "correctAnswer": ["to create, access and, manage projects"],
+      "type": "single",
+      "points": 1
+    },
+    {
+      "question": "The sales order approval process is automated using SAP BPA without using forms?",
+      "options": ["True", "False"],
+      "correctAnswer": ["True"],
+      "type": "single",
+      "points": 1
+    },
+    {
+      "question":"What roles are available for SAP Build Process Automation?",
+      "options":["ProcessAutomationAdmin", "ProcessAutomationDeveloper","ProcessAutomationUser","ProcessAutomationTester","ProcessAutomationParticipant"],
+      "correctAnswer":["ProcessAutomationAdmin","ProcessAutomationDeveloper", "ProcessAutomationParticipant" ],
+      "type":"multiple",
+      "points": 1
+    },
+    {
+      "question":"What is a business process?",
+      "options":["An intelligent bot to automate repetitive manual processes", "A configurable template", "A repetitive set of tasks or activities that are completed to achieve a goal or outcome for a business"],
+      "correctAnswer":["A repetitive set of tasks or activities that are completed to achieve a goal or outcome for a business"],
+      "type":"single",
+      "points": 1
+    },
+    {
+      "question":"What are some of the available Layout and/or Input fields available in forms?",
+      "options":["Headlines", "Number" ,"Date", "Video", "Dropdown"],
+      "correctAnswer":["Headlines", "Number" ,"Date"],
+      "type":"multiple",
+      "points": 1
+    },
+    {
+      "question":"In SAP Build Process Automation, forms can be utilized:",
+      "options":["to start the process", "to approve or reject a task","to notify requestor","to send emails"],
+      "correctAnswer":["to start the process", "to approve or reject a task","to notify requestor"],
+      "type":"multiple",
+      "points": 1
+    },
+    {
+      "question":"Which configurations are necessary for process condition?",
+      "options":["Add a condition to the process", "Configure if and else conditions","Define the process flow for different conditional paths","Map the condition input with process content","Add environment variables"],
+      "correctAnswer":["Add a condition to the process", "Configure if and else conditions","Define the process flow for different conditional paths"],
+      "type":"multiple",
+      "points": 1
+    },
+    {
+      "question":"Is the form link to run the business process generated before deploying the package?",
+      "options":["Yes","No"],
+      "correctAnswer":["No"],
+      "type":"single",
+      "points": 1
+    },
+    {
+      "question":"Where can an end user work on the forms?",
+      "options":["Chat Bot","Monitor Workflow Application","My Inbox","Process Workspace"],
+      "correctAnswer":["My Inbox"],
+      "type":"single",
+      "points": 1
+    }
+]
