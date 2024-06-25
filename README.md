@@ -1,5 +1,5 @@
 
-# workflow-ui-module
+# Learning Journey: workflow-ui-module
 
 A workflow task UI application
 
@@ -42,7 +42,7 @@ The project can be integrated in the SAP Build Process Automation Learing Journe
 - **CheckBox**: For multiple choice questions.
 - **Button**: To submit the quiz and calculate the score.
 
-### JSON Model (data1.json)
+### JSON Model (data1.json, data2.json)
 
 - **questions**: Contains an array of quiz questions, each with the question text, type (single/multiple), options, correct answer(s) and points.
 
