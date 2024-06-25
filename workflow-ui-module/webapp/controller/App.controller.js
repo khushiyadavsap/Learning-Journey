@@ -11,10 +11,10 @@ sap.ui.define(
     return BaseController.extend("Task.workflowuimodule.controller.App", {
       onInit: function () { 
         this.loadData("data1");
+        this._context = this.getView().getModel("context");
+        var Tex = this._context.getProperty("/Textfield");
 
-
-        // Log the description to verify
-        console.log("Description of newText:");
+        console.log("This is the value of it--",Tex);
       },
       loadData: function (mission) {
         // Path to the JSON file

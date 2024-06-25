@@ -38,7 +38,7 @@
                             <CustomListItem id="l2">
                                 <VBox id="vbox" class="customVBox">
                                     <HBox id="hb" justifyContent="SpaceBetween">
-                                    <Text text="{= 'Question: ' + (${questionsModel>index} + 1)}" id="text1" class="sapUiSmallMarginBottom customText"/>
+                                    <Text text="{= 'Question: ' + (${questionsModel>index} + 1)+ ${context>/Textfield}}" id="text1" class="sapUiSmallMarginBottom customText"/>
                                     <Text text="{= ${questionsModel>points} + ' Pts.'}" id="pointsText" class="sapUiSmallMarginBottom customText"/>
                                     </HBox>
                                     <Text text="{= ${questionsModel>question}}" id="text2" class="customQuestionText"/>
