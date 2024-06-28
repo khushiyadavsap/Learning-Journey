@@ -13,6 +13,7 @@ The project can be integrated in the SAP Build Process Automation Learing Journe
 
 - [Project Structure](#project-structure)
 - [Components](#components)
+- [Enhancements](#enhancements)
 - [API](#api)
 - [Application Details](#application-details)
 
@@ -53,6 +54,23 @@ The project can be integrated in the SAP Build Process Automation Learing Journe
 - **_patchTaskInstance**: Patches the task instance with the new context and marks it as completed.
 - **_fetchToken**: Fetches the CSRF token for secure communication.
 - **_refreshTaskList**: Refreshes the task list in the inbox.
+
+## Enhancements
+
+### 1. Dynamic Question Loading
+Questions are now dynamically loaded from a JSON file (`data1.json` or `data2.json`) based on the value of a context property (`Tex`). If `Tex` is "M" indicating that Mission-1 has been completed then, `data1.json` is loaded; otherwise, `data2.json` is loaded. This allows for different sets of questions to be presented based on specific conditions.
+
+### 2. Improved Question Shuffling
+Questions are shuffled randomly to ensure a unique quiz experience each time the quiz is taken. The first five questions from the shuffled list are selected for the quiz.
+
+### 3. Automatic Score Calculation
+The application now automatically calculates and displays the user's score upon submission. The score is compared against the correct answers stored in the JSON file.
+
+### 4. Support for Single and Multiple Answer Questions
+The quiz supports both single-answer and multiple-answer question types. Users can select one option for single-answer questions or multiple options for multiple-answer questions. The score calculation logic has been updated accordingly to handle both types of questions.
+
+### 5. Enhanced User Interface
+The user interface has been improved to provide a more interactive experience. The questions and options are presented using dynamic bindings, and the user's selections are tracked and updated in real-time.
 
 ## API
 
