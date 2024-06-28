@@ -58,7 +58,7 @@ The project can be integrated in the SAP Build Process Automation Learing Journe
 ## Enhancements
 
 ### 1. Dynamic Question Loading
-Questions are now dynamically loaded from a JSON file (`data1.json` or `data2.json`) based on the value of a context property (`Tex`). If `Tex` is "M" indicating that Mission-1 has been completed then, `data1.json` is loaded; otherwise, `data2.json` is loaded. This allows for different sets of questions to be presented based on specific conditions.
+Questions are now dynamically loaded from a JSON file (`data1.json` or `data2.json`) based on the value of a context property (`code`). If `code` is "M1" indicating that Mission-1 has been completed then, `data1.json` is loaded; otherwise, `data2.json` is loaded. This allows for different sets of questions to be presented based on specific conditions.
 
 ### 2. Improved Question Shuffling
 Questions are shuffled randomly to ensure a unique quiz experience each time the quiz is taken. The first five questions from the shuffled list are selected for the quiz.
