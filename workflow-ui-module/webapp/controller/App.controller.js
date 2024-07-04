@@ -10,11 +10,16 @@ sap.ui.define(
 
     return BaseController.extend("Task.workflowuimodule.controller.App", {
       onInit: function () { 
-        this.loadData("data1");
         this._context = this.getView().getModel("context");
-        var Tex = this._context.getProperty("/Textfield");
+        var code = this._context.getProperty("/newText");
 
-        console.log("This is the value of it--",Tex);
+        console.log("This is the value of it-",code);
+
+        if(code==="M1"){
+          this.loadData("data1");
+        } else{
+          this.loadData("data2");
+        }
       },
       loadData: function (mission) {
         // Path to the JSON file
@@ -126,6 +131,8 @@ sap.ui.define(
           }
         });
         console.log("Score", score, typeof score);
+        var oComponent = this.getOwnerComponent();
+        oComponent.setScoreInContext(score);
         try {
           MessageToast.show("Your score is: " + score);
         } catch (error) {

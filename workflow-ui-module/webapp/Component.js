@@ -45,6 +45,13 @@ sap.ui.define(
                     );
                 },
 
+                setScoreInContext: function (score) {
+                    var oContextModel = this.getModel("context");
+                    oContextModel.setProperty("/outText", score);
+                    var submitOutcomeId = "submit"; // Replace with your outcome ID if different
+                    this.completeTask(true, submitOutcomeId); // Assuming you have a completeTask function
+                },
+
                 setTaskModels: async function () {
                     // set the task model
                     var startupParameters = this.getComponentData().startupParameters;

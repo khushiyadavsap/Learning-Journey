@@ -9,17 +9,17 @@
     xmlns:smartField="sap.ui.comp.smartfield"
     xmlns="sap.m">
     <App id="app" class="sapUiResponsiveMargin" width="auto">
-        <Page id="scroll" title="SAP Build Process Automation" enableScrolling="true" titleAlignment="Auto" class="customPage">
+        <Page id="scroll" title="SAP Build Process Automation" enableScrolling="true" class="customPage">
             <content>
                 <VBox id="space2">
                         <HBox id="hb2" height="0.5rem" />
                     </VBox>
-                <ComboBox id="missionSelector" selectionChange="onMissionChange">
+                <!-- <ComboBox id="missionSelector" selectionChange="onMissionChange">
                 <items>
                     <core:Item id="c1" key="Mission 1" text="Mission 1"/>
                     <core:Item id="c2" key="Mission 2" text="Mission 2"/>
                 </items>
-                </ComboBox>
+                </ComboBox> -->
                 <VBox id="quiz1" class="sapUiLargeMargin sapUiResponsiveContentPadding">
                     <VBox id="space0">
                         <HBox id="hb0" height="0.5rem" />
@@ -38,7 +38,7 @@
                             <CustomListItem id="l2">
                                 <VBox id="vbox" class="customVBox">
                                     <HBox id="hb" justifyContent="SpaceBetween">
-                                    <Text text="{= 'Question: ' + (${questionsModel>index} + 1)+ ${context>/Textfield}}" id="text1" class="sapUiSmallMarginBottom customText"/>
+                                    <Text text="{= 'Question: ' + (${questionsModel>index} + 1)}" id="text1" class="sapUiSmallMarginBottom customText"/>
                                     <Text text="{= ${questionsModel>points} + ' Pts.'}" id="pointsText" class="sapUiSmallMarginBottom customText"/>
                                     </HBox>
                                     <Text text="{= ${questionsModel>question}}" id="text2" class="customQuestionText"/>

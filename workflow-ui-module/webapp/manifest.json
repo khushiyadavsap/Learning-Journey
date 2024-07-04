@@ -148,11 +148,14 @@
             "$schema": "http://json-schema.org/draft-07/schema",
             "title": "output",
             "type": "object",
-            "required": [
-            ],
+            "required": ["outText"],
             "properties": {
+                "outText": {
+                    "type":"number",
+                    "title": "Score"
+                }
             }
         },
         "category": "standard"
-    }
+}
 }
