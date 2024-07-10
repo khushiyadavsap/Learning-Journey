@@ -15,10 +15,11 @@ sap.ui.define(
 
         console.log("This is the value of it-",code);
 
-        if(code==="M1"){
-          this.loadData("data1");
-        } else{
+        if(code==="M2"){
           this.loadData("data2");
+        }
+        else{
+          this.loadData("data1");
         }
       },
       loadData: function (mission) {
