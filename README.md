@@ -96,7 +96,6 @@ The user interface has been improved to provide a more interactive experience. T
 |**Service URL**<br>N/A
 |**Module Name**<br>workflow-ui-module|
 |**Application Title**<br>Task UI app title|
-|**Namespace**<br>com.sap.demo.ui5barcode|
 |**UI5 Theme**<br>sap_fiori_3|
 |**UI5 Version**<br>1.82.2|
 |**Enable Code Assist Libraries**<br>False|
